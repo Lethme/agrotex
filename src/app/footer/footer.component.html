@@ -1,0 +1,33 @@
+<footer class="footer text-lg-start">
+    <div class="container">
+        <div class="footer-wrapper flex-xs-column flex-lg-row">
+            <div class="form col-xs-12 col-lg-6">
+                <h5 class="title">Sign-Up for the NewsLetter</h5>
+                <form (submit)="singUp()" class="flex-xs-column flex-lg-row">
+                    <input type="email" name="email" [(ngModel)]="email" class="input-field">
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="contacts col-xs-12 col-lg-4 col-xl-3">
+                <h5 class="title">Contact us</h5>
+                <div class="text">Freephone: <a class="contact-link tel" href="tel:+18005596580">+1 800 559 6580</a>
+                </div>
+                <div class="text">Telephone: <a class="contact-link tel" href="tel:+19596036035">+1 959 603 6035</a>
+                </div>
+            </div>
+            <div class="social col-xs-12 col-lg-2 col-xl-3">
+                <h5 class="title">Follow us</h5>
+                <div class="social-wrapper flex-row flex-justify-start flex-wrap-none">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sm-link rss"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sm-link tumblr"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sm-link facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper flex-row">
+            <div class="copyright col-xs-12">
+                <p class="text">Company &#169; 2014 | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link privacy">PRIVACY POLICY</a></p>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,14 @@
+.nav-item .nav-link {
+  color: var(--color-grey);
+  font-family: var(--font-raleway);
+}
+.nav-item .nav-link:hover,
+.nav-item .nav-link:active,
+.nav-item .nav-link.active {
+  color: var(--color-orange);
+}
+@media screen and (max-width: 992px) {
+  .nav-item {
+    margin: 0;
+  }
+}

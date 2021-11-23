@@ -1,0 +1,116 @@
+.footer {
+    padding-top: 30px;
+    background: var(--color-lightgrey);
+    // box-shadow: inset 0px 11px 10px -13px #CCC;
+    box-shadow: inset 0 10px 6px -5px rgba(#000, .2);
+
+    .footer-wrapper {
+        & > div {
+            padding-right: 70px;
+            &:last-child { padding-right: 0; }
+        }
+        
+        .title {
+            text-transform: uppercase;
+        }
+        .form {
+            form {
+                .input-field {
+                    width: 100%;
+                    padding: 0 15px;
+                    border: 1px solid var(--color-grey);
+                    transition: all .1s linear;
+
+                    &:focus,
+                    &:valid { 
+                        outline: none;
+                        box-shadow: none;
+                        border: 1px solid var(--color-darklime);
+                    }
+                    &::selection {
+                        background: var(--color-lime);
+                    }
+                }
+                .btn {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .social {
+            .social-wrapper {
+                .sm-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--color-lightblack);
+                    color: var(--color-lightgrey);
+                    padding: 10px;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 5px;
+                    text-decoration: none;
+                    transition: all .1s linear;
+                    font-family: FontAwesome;
+
+                    &:hover,
+                    &:active {
+                        color: var(--color-lime);
+                    }
+
+                    &.rss::before {
+                        content: '\f09e';
+                    }
+                    &.tumblr::before {
+                        content: '\f173';
+                    }
+                    &.facebook::before {
+                        content: '\f39e';
+                    }
+                }
+            }
+        }
+        .copyright {
+            padding-top: 20px;
+            text-align: center;
+            
+            a.privacy {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: var(--color-lightorange);
+                transition: all .1s linear;
+                
+                &:hover,
+                &:active {
+                    color: var(--color-orange);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        .footer-wrapper {
+            & > div { 
+                padding-right: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+                &:last-child { margin-bottom: 0; }
+            }
+
+            .form {
+                form {
+                    .btn {
+                        margin-left: 0;
+                    }
+                    .input-field {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

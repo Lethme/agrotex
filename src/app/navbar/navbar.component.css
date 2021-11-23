@@ -1,0 +1,44 @@
+.navbar {
+  position: sticky;
+  font-family: var(--font-raleway);
+  background: var(--color-white);
+  box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-brand {
+  line-height: 0.8;
+  font-size: 28px;
+  font-weight: 700;
+}
+.navbar .navbar-brand .part-2 {
+  color: var(--color-orange);
+}
+.navbar .navbar-brand .part-3 {
+  font-size: 50%;
+  opacity: 0.6;
+}
+.navbar .navbar-toggler {
+  border: 2px solid transparent;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.navbar .navbar-toggler .navbar-toggler-icon-fa::before {
+  content: '\f0c9';
+  font-family: FontAwesome;
+  color: var(--color-grey);
+  transition: all 0.1s linear;
+}
+.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .navbar-toggler:hover > .navbar-toggler-icon-fa::before,
+.navbar .navbar-toggler:active > .navbar-toggler-icon-fa::before,
+.navbar .navbar-toggler.uncollapsed > .navbar-toggler-icon-fa::before {
+  color: var(--color-orange);
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar #navbar-nav .navbar-nav {
+  text-transform: uppercase;
+}

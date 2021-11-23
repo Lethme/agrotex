@@ -1,0 +1,22 @@
+.header {
+  height: 200px;
+  background-image: url('../../assets/img/header/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 0px) {
+  .header {
+    height: 150px;
+  }
+}
+@media (min-width: 576px) {
+  .header {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    height: 300px;
+  }
+}

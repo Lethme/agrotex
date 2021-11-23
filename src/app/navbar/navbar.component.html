@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light pos-sticky bg-light flex-row flex-justify-sb flex-align-center flex-xs-wrap flex-lg-wrap-none">
+    <div class="container">
+        <a class="navbar-brand flex-row flex-justify-center flex-align-end flex-wrap-none" routerLink="">
+            <span class="part-1">AGRO</span>
+            <span class="part-2">TEX</span>
+            <span class="part-3">GROUP</span>
+        </a>
+        <button class="navbar-toggler p-xs-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-fa"></span>
+        </button>
+        <div id="navbar-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto fw-600">
+                <app-nav-link *ngFor="let link of htmlLinks" [link]="link"></app-nav-link>
+            </ul>
+        </div>
+    </div>
+</nav>
